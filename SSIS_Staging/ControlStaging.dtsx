@@ -1,0 +1,291 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/28/2024 10:31:54 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MYCOMPUTER"
+  DTS:CreatorName="MYCOMPUTER\User"
+  DTS:DTSID="{01C64B74-1D13-4A4C-AC99-DF118179A90F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{B4A82BCA-752A-45C3-B833-A8C5D4FB32C1}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ERP_Full"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{BB20D026-871D-497E-B47C-AB98F557A4D5}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ERP_Full"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>ERP_Full.dtsx</PackageName>
+          <PackagePassword
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA62PhuuFMFEGE99d6q0Fc5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACPPLzqymF/DCfp8Uew14aA9tUUdUmb9cj94dwB8GpW2AAAAAAOgAAAAAIAACAAAAD0286ASCfs+5QVRoUZ9WLJbC6eatR4ZyJTYwRqY1FNiRAAAAD7TGBHMeEYu5RWcLnMGdEPQAAAAIy8OMS+R+M6o6axXUAu18gZenYCJN2ooY1dr/Lpw7zIxbzF77paH1oTAV6Ase0wl0VgmrHlzwn76llUNa1n8XY</PackagePassword>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ERP_Increment"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{BD024104-0BF5-4AE9-A244-807AA5E0FB01}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ERP_Increment"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>ERP_Increment.dtsx</PackageName>
+          <PackagePassword
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA62PhuuFMFEGE99d6q0Fc5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABwTOU8tVmmvTxENB/hkXw9xdntRpwjIAoX8aFV1Bxh/AAAAAAOgAAAAAIAACAAAADmkidOdn0o+0EMbBtG2J2m57fvqQmDlNcl8rxdaebzShAAAADMLcY5958xehwUnQ26dvVCQAAAANZDjUi2p94W6nzBtz8D/Z6+lR3ln+pRJpnMkhjkcyiR/8eSzeBDTA7JOyrmjteDy2Y0ID0Dsa8kozb8MzfBTVs</PackagePassword>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ERP_Product"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{0663ECF3-B03D-4CDF-829F-69A2D39B9F81}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ERP_Product"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>ERP_Product.dtsx</PackageName>
+          <PackagePassword
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA62PhuuFMFEGE99d6q0Fc5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA4Tgq46K1fjZGMBJcj6EyQ/hxKT+252ZEbkPh1HIrk1wAAAAAOgAAAAAIAACAAAAC70TXI27w0szr+schP7AFF9710KL752ApUpkne3/zQfxAAAABKozfyZCmjck6l4mArs6qbQAAAAEtSHE/UamWjqIDrO/aKGcLUuBqs2TlCFLWA3mJjqs3nH/8RKli+OtzDS3fHxskhIku+vHmjfU6cAb9qb+LxfMw</PackagePassword>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\ERP_Sales"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{D891C56D-451C-4163-8D47-1229FD3052AD}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ERP_Sales"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>ERP_Sales.dtsx</PackageName>
+          <PackagePassword
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA62PhuuFMFEGE99d6q0Fc5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADK8/kFelcgimqIjMAVSiDuOuptn6mpRCc1B12/WTGwmQAAAAAOgAAAAAIAACAAAAD+8nwCylzcVd4yOAEt1qBd2mHPZWKgUew+C1felWRdBRAAAABV3qNyXkHoZyCsUabVMZwmQAAAAKuprtQ59f3dlk9u8u3+gzN4zxK5KnmAVnyLEzHfxZIpDVHe8mOfW+zeZwZqbmUDUZRXKFNlrCtD57tSZvKu6mo</PackagePassword>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\HR_All"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{B23E52B0-8BF2-4E66-9F10-D3517620864E}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="HR_All"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>HR_All.dtsx</PackageName>
+          <PackagePassword
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA62PhuuFMFEGE99d6q0Fc5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAyvXXvcmbZWV6YMw4TsmAWf20uQ+q8mNN+3THIjKmZUgAAAAAOgAAAAAIAACAAAACwb3ctPsnMZP7I8lJ/nvNBhb6Zcn4NoHyHtLDCfxyHJxAAAACbCsHs3yUCTAw++0QxFmkuQAAAAKU8yPOg70fFWOUGKFh62bw+kyKpoiU9KbjBHIy1vnRfdkBdJA+hZTG9danUkvR5vB6HppLJYp+0gGV7MASEMwo</PackagePassword>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{BBCAA3D0-BED9-4F7E-A432-52E29FAE59A4}"
+      DTS:From="Package\ERP_Full"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\ERP_Product" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{C0D72881-399B-4B61-88DE-415F53918216}"
+      DTS:From="Package\ERP_Product"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\ERP_Sales" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{BF529808-931B-4744-94FB-AD937BC02606}"
+      DTS:From="Package\ERP_Sales"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\HR_All" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{D410ED7D-AE2A-4058-B024-3F12EFD59A16}"
+      DTS:From="Package\HR_All"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\ERP_Increment" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\ERP_Full"
+          TopLeft="125.000000266092,13.7647058702877" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\ERP_Product"
+          TopLeft="118.571428823836,86.4117646301391" />
+        <NodeLayout
+          Size="127.2,41.6"
+          Id="Package\ERP_Sales"
+          TopLeft="122.142857402867,162.117646916721" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="186.185714544964,55.3647058702877">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.0470587598514"
+              Start="0,0"
+              End="0,23.5470587598514">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5470587598514" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="186.757143113352,128.011764630139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.105882286582"
+              Start="0,0"
+              End="0,26.605882286582">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.605882286582" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="109.6,41.6"
+          Id="Package\HR_All"
+          TopLeft="136.428571718992,253.882352718639" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="188.48571456093,203.717646916721">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.1647058019177"
+              Start="0,0"
+              End="0,42.6647058019177">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.6647058019177" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\ERP_Increment"
+          TopLeft="443.571429515676,129.247058725666" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="208.161905052325,253.882352718639">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="311.00952446335,-83.0352939929724"
+              Start="0,0"
+              End="311.00952446335,-75.5352939929724">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-29.9309690561211" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-29.9309690561211"
+                    Point2="0,-33.9309690561211"
+                    Point3="4,-33.9309690561211" />
+                  <mssgle:LineSegment
+                    End="307.00952446335,-33.9309690561211" />
+                  <mssgle:CubicBezierSegment
+                    Point1="307.00952446335,-33.9309690561211"
+                    Point2="311.00952446335,-33.9309690561211"
+                    Point3="311.00952446335,-37.9309690561211" />
+                  <mssgle:LineSegment
+                    End="311.00952446335,-75.5352939929724" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
